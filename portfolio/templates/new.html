@@ -1,0 +1,50 @@
+{% extends 'layouts/inner-page.html'%}
+{% block title%} Webracket | new{% endblock %}
+
+{% load static %}
+{% block content%}
+<div class="container" style="padding-top: 4em;">
+    <section id="" class="gallery">
+        <div class="container">
+    
+          <div class="section-title" data-aos="fade-up">
+            <h2>Gallery</h2>
+            <p>Hello {{email}}</p>
+          </div>
+    
+          <div class="row no-gutters" data-aos="fade-left">
+    
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                <a href="{% static 'img/gallery/gallery-1.jpg' %}" class="gallery-lightbox">
+                  <img src="{% static 'img/gallery/gallery-1.jpg' %}" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+                <a href=" {% static 'img/gallery/gallery-2.jpg'%}" class="gallery-lightbox">
+                  <img src="{% static 'img/gallery/gallery-2.jpg'%}" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                <a href="{% static 'img/gallery/gallery-3.jpg%'}" class="gallery-lightbox">
+                  <img src="{% static 'img/gallery/gallery-3.jpg'%}" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+    
+            
+          </div>
+    
+        </div>
+      </section><!-- End Gallery Section -->
+</div>
+
+
+
+{% endblock %}
